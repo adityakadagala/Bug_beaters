@@ -51,18 +51,14 @@ CREATE TABLE IF NOT EXISTS `customer_order` (
   PRIMARY KEY (`order_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table order_book_system.customer_order: ~8 rows (approximately)
+-- Dumping data for table order_book_system.customer_order: ~9 rows (approximately)
 /*!40000 ALTER TABLE `customer_order` DISABLE KEYS */;
 INSERT INTO `customer_order` (`order_id`, `Stock_name`, `order_quantity`, `order_type`, `Executed_qnty`, `price`, `order_status`, `order_date`) VALUES
 	(1, 'DBS', 50, 'LIMIT', 0, 150, 'PLACED', '21FEB2021'),
 	(2, 'DBS', 50, 'market', 0, NULL, 'PLACED', '21FEB2021'),
 	(3, 'DBS', 50, 'LIMIT', 0, 140, 'PLACED', '21FEB2021'),
-	(4, 'DBS', 50, 'LIMIT', 30, 150, 'ACCEPTED', '21FEB2021'),
-	(5, 'DBS', 50, 'market', 30, NULL, 'ACCEPTED', '21FEB2021'),
-	(6, 'DBS', 50, 'limit', 0, 140, 'REJECTED', '21FEB2021'),
 	(7, 'DBS', 50, 'limit', 50, 150, 'EXECUTED', '21FEB2021'),
-	(8, 'DBS', 50, 'MARKET', 50, NULL, 'EXECUTED', '21FEB2021'),
-	(9, 'DBS', 50, 'LIMIT', 0, 140, 'REJECTED', '21FEB2021');
+	(8, 'DBS', 50, 'MARKET', 50, NULL, 'EXECUTED', '21FEB2021');
 /*!40000 ALTER TABLE `customer_order` ENABLE KEYS */;
 
 -- Dumping structure for table order_book_system.order_customer
